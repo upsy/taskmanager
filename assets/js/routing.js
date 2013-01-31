@@ -1,4 +1,7 @@
 var App = {};
+
+vent =  _.extend({},Backbone.Events);
+
 Router = Backbone.Router.extend({
 
 	routes: {
@@ -28,18 +31,22 @@ console.log("hey!");
 
 
 
-jquery.pnotify
+//jquery.pnotify
 
-notifier = new Backbone.View.extend({
+App.Notifier =  Backbone.View.extend({
 	initialize: function  () {
-		vent.bind("notification:show", this.showText, this);
+		console.log("init");
+		vent.bind("notification:show", this.showNotif, this);
 	},
 
 	showNotif: function  ( pam_obj ) {
+		console.log(" >> showNotify: ", pam_obj)
 		$.pnotify( pam_obj );
 	}
 
 });
+
+notifier = new App.Notifier();
 
 
 //notifier = new App.Notifier();
@@ -55,4 +62,4 @@ vent.trigger("notification:show",
 // vent.trigger("notification:info", "Info Demo.. ");
 // vent.trigger("notification:error", "Error Demo.. ");
 // vent.trigger("notification:success", "Success Demo.. ");
-STSBU-01N091
+// STSBU-01N091
