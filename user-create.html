@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Login</title>
+	<link href="assets/js/libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/js/libs/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel='stylesheet'>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="user-login" class="screen center">
+		    <h2>Create User Account:</h2>
+		    <br/>
+		    <form class="form-horizontal" id="form-user" style="text-align:left;" action="" method="">
+		        <div class="central-form" style="margin-left:100px;">
+		            <div class="control-group">
+		                <label class="control-label" for="inputName">Your Name:</label>
+		                <div class="controls">
+		                    <input type="text" id="inputName" placeholder="Name" class="input-xlarge required" minlength="2" name='user_name'>
+		                </div>
+		            </div>
+		            
+		            <div class="control-group">
+		                <label class="control-label" for="inputEmail">Your Email:</label>
+		                <div class="controls">
+		                    <input type="text" id="inputEmail" placeholder="Email" class="input-xlarge required email" name='user_email'>
+		                </div>
+		            </div>
+		            <div class="control-group">
+		                <label class="control-label" for="inputPassword">Your Password:</label>
+		                <div class="controls">
+		                    <input type="password" id="inputPassword" placeholder="Password" class="required" minlength="5" name='user_password'>
+		                </div>
+		            </div>
+		            <div class="control-group">
+		                <label class="control-label" for="repeatPassword">Repeat Password:</label>
+		                <div class="controls">
+		                    <input type="password" id="repeatPassword" placeholder="Repeat Password" class="required" equalTo="#inputPassword">
+		                </div>
+		            </div>
+		        </div>
+		        <div class="form-actions center" style="padding-left:0px;">
+		            <button type="submit-ajax-blah" class="btn btn-primary" id="submitButton">Create Account...</button>
+		        </div>
+
+		    </form>
+		</div>
+	</div>
+	
+	<!-- Backbone stuff -->
+	<script src="assets/js/libs/jquery.min.js"></script>
+	<script src="assets/js/libs/json2.js"></script>
+	<script src="assets/js/libs/underscore.min.js"></script>
+	<script src="assets/js/libs/backbone.min.js"></script>
+
+	<script src="assets/js/libs/jquery.validate.min.js"></script>
+	<!-- Bootstrap js -->
+	<script type="text/javascript" src="assets/js/libs/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="assets/js/user-login.js"></script>
+
+	</body>
+</html>

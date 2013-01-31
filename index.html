@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Powerful Time Management App</title>
+	<link href="assets/js/libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/js/libs/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel='stylesheet'>
+</head>
+<body>
+	 <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Magical TaskManager</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link" id='user-logged-in'>Username</a>
+            </p>
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">Do Today</a></li>
+              <li><a href="#contact">Overview</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+	<div id="wrapper" class="container">
+	
+
+
+	<!-- Modal -->
+	<div id="login-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    <h3 id="myModalLabel">Login Panel</h3>
+	  </div>
+	  <div class="modal-body">
+		    <form class="form-signin">
+        		<h2 class="form-signin-heading">Please sign in</h2>
+        			<input type="text" class="input-block-level" placeholder="Email address">
+        			<input type="password" class="input-block-level" placeholder="Password">
+        			<label class="checkbox">
+          				<input type="checkbox" value="remember-me"> Remember me
+        			</label>
+      		</form>
+	  </div>
+	  <div class="modal-footer">
+	    <button class="btn btn-primary">Sign In</button>
+  	    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+	  </div>
+	</div>
+
+
+	</div>
+
+
+	<!-- Backbone stuff -->
+	<script src="assets/js/libs/jquery.min.js"></script>
+	<script src="assets/js/libs/json2.js"></script>
+	<script src="assets/js/libs/underscore.min.js"></script>
+	<script src="assets/js/libs/backbone.min.js"></script>
+
+	<script src="assets/js/libs/jquery.validate.min.js"></script>
+	<!-- Bootstrap js -->
+	<script type="text/javascript" src="assets/js/libs/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="assets/js/app.js"></script>
+
+	</body>
+</html>
